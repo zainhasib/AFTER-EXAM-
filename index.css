@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+#sece {
+    background: green;
+}
+
+body {
+    background: rgb(133, 133, 133);
+}
+
+/* Import */
+@import url('https://fonts.googleapis.com/css?family=Rammetto+One');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Roboto');    
+/* Import */
+
+/* Container */
+.container-fluid {
+    width: 100%;
+}
+.container {
+    width: 70%;
+    margin: auto;
+}
+/* Container */
+
+.background-colors {
+    background: rgb(9, 139, 199);
+}
+
+/* Align */
+header {
+    position: relative;
+    display: block;
+    height: 90px;
+    background: red;
+    margin-bottom: 40px;
+    box-shadow: 0 6px 5px rgb(99, 99, 99); 
+}
+.center-align {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Align */
+
+#head-txt {
+    margin: auto;
+    color: white;
+    display: inline;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 2rem;
+
+}
+
+section {
+    font-family: 'Roboto', sans-serif;
+    color: white;    
+}
+#sec1 {
+    min-height: 200px;
+    background: rgb(7, 112, 160);
+    position: relative;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#sec2 {
+    height: auto;
+}
+.con-sec2 {
+    padding: 4rem;
+}
+
+.sec-con {
+    word-wrap: break-word; 
+    height: auto;
+    z-index: initial;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar
+{
+  width: 12px;  /* for vertical scrollbars */
+  height: 12px; /* for horizontal scrollbars */
+}
+
+::-webkit-scrollbar-track
+{
+  background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb
+{
+  background: rgba(255, 196, 0, 0.8);
+  border-radius: 10px;
+  border: 2px solid white; 
+}
+/* Scrollbar */
+
+
+/* Aside */
+.aside {
+    position: fixed;
+    top: 40%;
+    left: 5%;
+    transform: translateX(-50%);    
+    min-height: 300px;
+    min-width: 60px;
+    background: rgb(14, 14, 14);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    z-index: 2;
+}
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.329); }
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+.aside button {
+    background: inherit;
+    border: none;
+    outline: none;
+}
+
+.box-canvas {
+    height: 300px;
+    width: 100%;
+    background: rgb(7, 150, 7);
+    position: relative;
+}
+.ball-canvas1 {
+    height: 50px;
+    width: 50px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite ease-out;
+    display: inline-block;
+}
+
+.ball-canvas2 {
+    height: 50px;
+    width: 50px;
+    background: red;
+    border-radius: 50%;
+    position: absolute;
+    right: 0;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite ease-in;
+    display: inline-block;
+}
+
+.ball-canvas3 {
+    height: 50px;
+    width: 50px;
+    background: red;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    position: absolute;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite ease-in-out;
+    display: inline-block;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    0%   {top: 0px; background: red; width: 100px;}
+    100% {top: 200px; background: yellow; width: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    0%   {top: 0px; background: red;}
+    50% {top: 100%; background: rgb(218, 20, 20); transform: translateY(-100%);}
+    100%   {top: 0px; background: red;}
+}
+
+.memo {
+    position: fixed;
+    width: 150px;
+    height: 300px;
+    /* background: red; */
+    top: 40%;
+    right: 5%;
+    transform: translateX(30%);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 15px 0 rgba(0, 0, 0, 0.19);
+}
+
+.top-memo {
+    background: rgb(0, 167, 50);
+    height: 10%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.body-memo {
+    background: rgb(0, 255, 76);
+    height: 90%;
+}
+
+#txt-area {
+    background: rgb(0, 255, 76);
+    width: 100%;
+    height: 100%;
+    outline: none;
+    border: none;
+    resize: none;
+}
+
